@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	$('#myTable').DataTable();
+    $('.dataTables_info').remove();
+	
 	var burger = 0;
 	$(document).on('click', '.burger', function(){
 		if(burger == 0){
