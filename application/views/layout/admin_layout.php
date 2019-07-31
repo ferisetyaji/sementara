@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="min-height:100%;background-color:#f8f8f8">
+<html lang="en" style="min-height:100%;background-color:#fff">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,39 +11,51 @@
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
         <link rel="stylesheet" href="<?=base_url('assets/css/admin.css')?>">
     </head>
-    <body style="background-color:#f8f8f8">
+    <body style="background-color:#fff">
         <div class="top-bar">
-            <div class="container">
-                <div class="row">
-                    <a href="#" class="brands">Mebel Sumber Rejeki</a>
-                    <div class="navbar-right navbar-img" style="margin-right:15px">
-                        <p class="navbar-text navbar-right" style="margin-bottom:0">Masuk sebagei <?=$user_data->username?></p>
-                    </div>
+            <a href="#" class="brands">Admin SPK Cafe</a>
+            <div class="navbar-right navbar-img" style="margin-right:15px">
+                <div class="drop-bar">
+                    <div class="i-user"><i class="fas fa-user fa-fw"></i></div>
                 </div>
+                <ul class="dropmenu">
+                    <li><a>Masuk Sebagei Admin</a></li>
+                    <li><a href="">Profil</a></li>
+                    <li><a href="" class="keluar">Keluar</a></li>
+                </ul>
             </div>
+            <div class="clear"></div>
         </div>
-        <div class="body-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 sidebar">
-                        <div class="side-nav">
-                            <div class="img"></div>
-                            <div class="name"></div>
-                            <div class="log"></div>
-                        </div>
-                        <br>
-                        <nav class="side-nav">
-                            <ul class="list-unstyled" style="margin:0">
-                                <li style="border-bottom: 1px solid #ddd;"><a href="<?=site_url('admin')?>"><span><i class="fas fa-users-cog"></i></span>Admin</a></li>
-                                <li style="border-bottom: 1px solid #ddd;"><a href="<?=site_url('admin/barang')?>"><span><i class="fas fa-box"></i></span>Barang</a></li>
-                                <li><a href="<?=site_url('admin/transaksi')?>"><span><i class="fas fa-file"></i></span>Transaksi</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-md-9 content"><?=$content?></div>
-                </div>
-            </div>
+        <div class="admin-menu">
+            <ul class="list-unstyled">
+                <li id="home">
+                    <a href="<?=site_url('admin')?>" class="admin-menu-first" data-id="#home">
+                        <i class="fa fa-tachometer-alt fa-fw"></i>
+                        <span>Admin</span>
+                    </a>
+                </li>
+                <li id="barang">
+                    <a href="<?=site_url('admin/barang')?>" class="admin-menu-first" data-id="#barang">
+                        <i class="fa fa-box fa-fw"></i>
+                        <span>Barang</span>
+                    </a>
+                </li>
+                <li id="transaksi">
+                    <a href="<?=site_url('admin/transaksi')?>" class="admin-menu-first" data-id="#transaksi">
+                        <i class="fa fa-file-alt fa-fw"></i>
+                        <span>Transaksi</span>
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="logout" class="admin-logout">
+                        <i class="fas fa-sign-out-alt fa-fw"></i>
+                        <span>Keluar</span>
+                    </a>
+                </li>
+            </ul>
         </div>
+        <div class="contents"><?=$content?></div>
         <script type="text/javascript" src="<?=base_url('assets/js/jquery.js')?>"></script>
         <script type="text/javascript" src="<?=base_url('assets/js/bootstrap/bootstrap.min.js')?>"></script>
         <script type="text/javascript" src="<?=base_url('assets/js/dataTables.min.js')?>"></script>

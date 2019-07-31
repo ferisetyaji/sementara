@@ -6,14 +6,14 @@
 .db{display:block;}
 .dib{display:inline-block;}
 .img{
-	max-width:100%;
-	max-height:100%;
+    max-width:100%;
+    max-height:100%;
 }
 .wauto{width:auto;}
 .in-number{width:200px;}
 
 .form-control, .mce-tinymce, .btn, .panel{
-    border-radius: 3px;
+    border-radius: 0px;
 }
 
 .mce-branding-powered-by{display:none;}
@@ -45,10 +45,135 @@
     display: block;
 }
 
+.contents{
+    padding: 65px 15px 50px 225px;
+    transition: 0.3s;
+}
+.content-in{padding-left:15px;}
 .top-bar{
-    padding-bottom:10px;
-    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    padding: 10px 0 16px;
+    background-color: #2D87DF;
     border-bottom: 0.5px solid #ddd;
+}
+.navbar-brand, .navbar-brand:hover{color:#fff;}
+.navbar-img{
+    float:right;
+}
+.i-user{
+    padding: 5px 7px;
+    margin-top: 9px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor:pointer;
+}
+.dropmenu{
+    position:absolute;
+    top: 57px;
+    right:-217px;
+    padding:0;
+    border-radius:3px;
+    border:1px solid #ddd;
+    background-color:#fff;
+    transition:0.3s;
+    z-index:13;
+}
+.drop-hide{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color:transparent;
+    z-index:11;
+}
+.dropmenu-ac{right: 6px;}
+.dropmenu li{list-style:none}
+.dropmenu li a{
+    display: block;
+    width: 200px;
+    padding: 7px 0 7px 20px;
+    text-align: left;
+    color: #555;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.dropmenu li a:hover{color:#e74a3b;}
+.keluar{
+    color:#fff !important;
+    background-color:#e74a3b;
+}
+.keluar:hover{color:#555 !important;}
+.admin-menu{
+    position: fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    width: 225px;
+    padding: 0 15px;
+    padding-top: 80px;
+    background-color:#fff;
+    z-index: 9;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+.admin-menu ul li a, .submenu li a{
+    display: block;
+    font-weight: normal;
+    font-size:1em;
+    padding:10px 0;
+    padding-left:5px;
+    text-decoration: none;
+    cursor:pointer;
+    color:#252525;
+}
+.admin-logout, .admin-menu-first, .admin-menu-active{margin:7px 0;}
+.admin-menu-first:hover, .admin-menu-active{
+    background-color:#55555536;
+}
+.admin-logout i, .admin-menu-first i, .admin-menu-active i{
+    font-size:1.1em;
+    margin:0 10px;
+}
+.admin-logout{
+    border: 2px solid #e74a3b;
+    color: #e74a3b !important;
+    transition: 0.3s;
+}
+.admin-logout:hover{
+    background-color:#e74a3b;
+    color:#fff !important;
+}
+.side-in{left:-210px;}
+.submenu{
+    max-height:0;
+    overflow:hidden;
+    transition: max-height 0.3s ease-out;
+    list-style:none;
+    padding:0;
+}
+.submenu div{
+    padding-left:15px;
+    margin:15px;
+    border-radius: 4px;
+    background-color:#fff;
+}
+.submenu li a{color:#555 !important;}
+.submenu li a:hover{color:#e74a3b !important;}
+.btn-burger{
+    float:left;
+    padding:15px;
+    font-size: 1.5em;
+    line-height:0;
+    color:#fff;
+}
+.btn-burger:hover{
+    color:#ffffffcc;
 }
 .brands{
     float: left;
@@ -56,38 +181,20 @@
     padding-left: 15px;
     font-size: 1.5em;
     font-weight: 600;
-    color: #252525;
+    color: #fff !important;
+    text-decoration:none !important;
 }
-.body-content{
-    margin-top:50px;
+.side-hr{
+    clear:both;
+    height:1px;
+    margin:0 15px;
+    background-color:#ffffff26;
 }
-.side-nav{
-    background-color:#fff;
-    border:1px solid #ddd;
-    border-radius:4px;
+.contents{
+    padding: 65px 15px 50px 240px;
+    transition: 0.3s;
 }
-.side-nav ul li a{
-    display: block;
-    padding: 10px 0px;
-    text-decoration:none;
-    color:#252525;
-    font-size: 1.1em;
-}
-.side-nav ul li a:hover{
-    background-color:#ddd;
-}
-.side-nav ul li a span{
-    display: inline-block;
-    width: 50px;
-    text-align: center;
-}
-.content{
-    background-color:#fff;
-    border:1px solid #ddd;
-    border-radius:4px;
-    padding:15px;
-    padding-bottom:30px;
-}
+.content-in{padding-left:15px;}
 .table-filter{
     display:inline-block;
     width:auto;
@@ -120,21 +227,3 @@
     margin-top: 0 !important;
 }
 .title-modal{font-weight:600;}
-.login{
-    max-width: 300px;
-    margin: 0 auto;
-    margin-top: 150px;
-    padding: 15px 25px;
-    background-color: #fff;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-}
-.login-title{
-    font-size: 1.5em;
-    font-weight: 600;
-    text-align: center;
-}
-.login-error{
-    padding:15px 0;
-}
-
