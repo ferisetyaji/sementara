@@ -4,10 +4,10 @@
 	<table class="table table-striped table-bordered" id="myTable">
 		<thead>
 			<tr>
-				<th>No</th>
+				<th class="tb-no">No</th>
 				<th>Nama Barang</th>
 				<th>Harga</th>
-				<th>Aksi</th>
+				<th class="tb-act-2">Aksi</th>
 			</tr>
 		</thead>
 		<tbody>

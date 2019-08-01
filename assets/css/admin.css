@@ -54,11 +54,38 @@
     position: fixed;
     width: 100%;
     z-index: 10;
-    padding: 10px 0 16px;
+    padding: 10px 15px 16px;
     background-color: #2D87DF;
     border-bottom: 0.5px solid #ddd;
 }
+.btn-burger{
+    float:left;
+    padding:15px;
+    padding-bottom: 5px;
+    font-size: 1.5em;
+    line-height:0;
+    color:#fff;
+}
+.btn-burger:hover{
+    color:#ffffffcc;
+}
+.brands{
+    float: left;
+    padding-top: 9px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #fff !important;
+    text-decoration:none !important;
+}
 .navbar-brand, .navbar-brand:hover{color:#fff;}
+.text-user{
+    float: right;
+    margin: 14px 15px 6px 0;
+    color:#fff;
+}
+.text-user a{
+    color:#252525;
+}
 .navbar-img{
     float:right;
 }
@@ -68,45 +95,7 @@
     border-radius: 50px;
     border: 1px solid #ddd;
     background-color: #fff;
-    cursor:pointer;
 }
-.dropmenu{
-    position:absolute;
-    top: 57px;
-    right:-217px;
-    padding:0;
-    border-radius:3px;
-    border:1px solid #ddd;
-    background-color:#fff;
-    transition:0.3s;
-    z-index:13;
-}
-.drop-hide{
-    position:fixed;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-    background-color:transparent;
-    z-index:11;
-}
-.dropmenu-ac{right: 6px;}
-.dropmenu li{list-style:none}
-.dropmenu li a{
-    display: block;
-    width: 200px;
-    padding: 7px 0 7px 20px;
-    text-align: left;
-    color: #555;
-    text-decoration: none;
-    transition: 0.3s;
-}
-.dropmenu li a:hover{color:#e74a3b;}
-.keluar{
-    color:#fff !important;
-    background-color:#e74a3b;
-}
-.keluar:hover{color:#555 !important;}
 .admin-menu{
     position: fixed;
     left:0;
@@ -121,7 +110,14 @@
     overflow-x: hidden;
     transition: 0.3s;
 }
-
+.side-line{
+    position: absolute;
+    right: 0;
+    top: 82px;
+    bottom: 15px;
+    width: 1px;
+    background-color: #ddd;
+}
 .admin-menu ul li a, .submenu li a{
     display: block;
     font-weight: normal;
@@ -165,25 +161,6 @@
 }
 .submenu li a{color:#555 !important;}
 .submenu li a:hover{color:#e74a3b !important;}
-.btn-burger{
-    float:left;
-    padding:15px;
-    font-size: 1.5em;
-    line-height:0;
-    color:#fff;
-}
-.btn-burger:hover{
-    color:#ffffffcc;
-}
-.brands{
-    float: left;
-    padding-top: 9px;
-    padding-left: 15px;
-    font-size: 1.5em;
-    font-weight: 600;
-    color: #fff !important;
-    text-decoration:none !important;
-}
 .side-hr{
     clear:both;
     height:1px;
@@ -217,8 +194,11 @@
 }
 .shortcut p{font-size: 1.1em}
 .tb-check{width:30px;}
-.tb-act{
-    width:100px;
+.tb-no{
+    width:43px !important;
+}
+.tb-act-2{
+    width:92px !important;
     text-align: center;
 }
 .close-modal{

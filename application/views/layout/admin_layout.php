@@ -7,26 +7,21 @@
         <title>Aplikasi Prediksi Penjualan Furnitur</title>
         <link rel="stylesheet" href="<?=base_url('assets/css/bootstrap/css/bootstrap.min.css')?>">
         <link rel="stylesheet" href="<?=base_url('assets/css/fontawesome/css/all.css')?>">
-        <link rel="stylesheet" href="<?=base_url('assets/css/dataTables.min.css')?>">
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
         <link rel="stylesheet" href="<?=base_url('assets/css/admin.css')?>">
     </head>
     <body style="background-color:#fff">
         <div class="top-bar">
-            <a href="#" class="brands">Admin SPK Cafe</a>
+            <div class="btn-burger burger dib pointer"><i class="fas fa-bars"></i></div>
+            <a href="#" class="brands">Mebel Sumber Rejeki 3</a>
             <div class="navbar-right navbar-img" style="margin-right:15px">
-                <div class="drop-bar">
-                    <div class="i-user"><i class="fas fa-user fa-fw"></i></div>
-                </div>
-                <ul class="dropmenu">
-                    <li><a>Masuk Sebagei Admin</a></li>
-                    <li><a href="">Profil</a></li>
-                    <li><a href="" class="keluar">Keluar</a></li>
-                </ul>
+                <div class="i-user"><i class="fas fa-user fa-fw"></i></div>
             </div>
+            <p class="text-user">Masuk Sebagei <a href="">Admin</a></p>
             <div class="clear"></div>
         </div>
         <div class="admin-menu">
+            <div class="side-line"></div>
             <ul class="list-unstyled">
                 <li id="home">
                     <a href="<?=site_url('admin')?>" class="admin-menu-first" data-id="#home">
